@@ -1,0 +1,5 @@
+#!/bin/bash
+# My first script
+
+echo "Hello World!"
+picocom /dev/ttyS0 --imap crlf --omap crlf --emap crlf

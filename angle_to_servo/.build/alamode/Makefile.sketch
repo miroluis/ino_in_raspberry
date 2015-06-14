@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/alamode/src/angle_2_servo.cpp : src/angle_2_servo.ino
+	@mkdir -p .build/alamode/src
+	@echo [93msrc/angle_2_servo.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/alamode/src/angle_2_servo.cpp
+	@true
+
