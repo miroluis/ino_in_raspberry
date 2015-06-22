@@ -37,7 +37,7 @@ const int moisteurPin = A1;  // Analog input pin that the potentiometer is attac
 
 
 int sensorValue = 0;        // value read from the pot
-int moisteurVal = 0;
+int moistureVal = 0;
 int outputValue = 0;        // value output to the PWM (analog out)
 
 
@@ -97,14 +97,14 @@ void loop() {
 
   // read the analog in value:
   sensorValue = analogRead(analogInPin);
-  moisteurVal = analogRead(moisteurPin);
+  moistureVal = analogRead(moisteurPin);
 
 
   // print the results to the serial monitor:
   Serial.print("light = " );
   Serial.print(sensorValue);
-  Serial.print("\t moisteur = ");
-  Serial.println(moisteurVal);
+  Serial.print("\t moisture = ");
+  Serial.println(moistureVal);
 
   // Read values from the sensor
   temp_c = sht1x.readTemperatureC();
